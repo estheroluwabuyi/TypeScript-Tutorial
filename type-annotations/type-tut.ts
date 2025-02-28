@@ -11,8 +11,9 @@ let x: any = "Esther";
 let xArr: any[] = ["Esther", 0, true];
 
 //Function Types
-const concatenateValues = (a: string, b: string) => {
+const concatenateValues = (a: string, b: string): string => {
   return a + b;
+  //   return 5 + 7;
 };
 
 console.log(concatenateValues("Hello ", "World"));
