@@ -46,3 +46,41 @@ User.greet("Hello");
 // } else {
 //   console.log(` This user's age is ${User2.age}`);
 // }
+
+// MINI CHALLENGE WITH METHOD IN INTERFACE
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  getUserInfo(): void;
+}
+
+const user: User = {
+  id: 1,
+  name: "Esther",
+  email: "esther@example.com",
+  getUserInfo() {
+    console.log(`User ${this.name} has an email of ${this.email}`);
+  },
+};
+
+user.getUserInfo();
+
+//MINI CHALLENGE WITH EXTERNAL FUNCTION
+interface User2 {
+  id: number;
+  name: string;
+  email: string;
+}
+
+function getUserInfo2(user2: User2): void {
+  console.log(`User ${user2.name} has an email of ${user2.email}`);
+}
+
+const user2: User2 = {
+  id: 2,
+  name: "Remmy",
+  email: "remmy@example.com",
+};
+
+getUserInfo2(user2);
