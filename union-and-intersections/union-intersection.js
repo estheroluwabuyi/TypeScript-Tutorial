@@ -1,5 +1,5 @@
 "use strict";
-//UNIONS
+//UNION
 // const printID = (id: string | number) => {
 //   console.log("ID: " + id);
 // };
